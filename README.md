@@ -38,11 +38,11 @@ Each `FWPM_SESSION0` struct contains the opener's SID. `ConvertSidToStringSidA` 
 
 **Watch mode**
 
-`--watch` doesn't use WFP subscription callbacks — it polls all five enumeration APIs in a loop, sleeps N seconds, then diffs. `[+]` for additions, `[-]` for removals. Ctrl+C sets a stop flag via `SetConsoleCtrlHandler`.
+`--watch` doesn't use WFP subscription callbacks it polls all five enumeration APIs in a loop, sleeps N seconds, then diffs. `[+]` for additions, `[-]` for removals. Ctrl+C sets a stop flag via `SetConsoleCtrlHandler`.
 
 **Baseline and diff**
 
-`--baseline` writes a plain-text snapshot of all four object types to a file — one `{GUID}=name` line per object. `--diff` reads it back and compares against current state. Human-readable, no external libraries.
+`--baseline` writes a plain-text snapshot of all four object types to a file one `{GUID}=name` line per object. `--diff` reads it back and compares against current state. Human-readable, no external libraries.
 
 **Vendor fingerprint table**
 
